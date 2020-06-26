@@ -12,8 +12,11 @@ export class Person {
       yearLength: [.24, .62, 1.88, 11.86]
     }
     for (let i = 0; i<planets.yearLength.length; i++){
-      this.planetAges.push(Math.round(this.earthAge/planets.yearLength[i]));
-      // this.planetsExpectancy
+      let planetAge = Math.round(this.earthAge/planets.yearLength[i]);
+      let planetExpectancy = Math.round(this.earthExpectancy/planets.yearLength[i]);
+      let planetYearsLeft = Math.round(planetExpectancy-planetAge);
+      this.planetAges.push(planetAge);
+      this.yearsLeft.push(planetYearsLeft);
     }
   
   }
