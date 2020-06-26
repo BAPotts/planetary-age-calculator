@@ -14,9 +14,9 @@ export class Person {
     }
   }
   getYears(){
-    // for (let i = 0; i<this.planetConversions.length; i++){
-    //   this.planetAges.push(Math.round(this.earthAge/this.planetConversions[i]));
-    // }
+    for (let i = 0; i<this.planetConversions.length; i++){
+      this.yearsLeft.push(Math.round((this.earthExpectancy/this.planetConversions[i])-this.planetAges[i]));
+    }
   }
 
   // ageCalc() {
