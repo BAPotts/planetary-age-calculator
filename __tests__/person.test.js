@@ -19,4 +19,10 @@ describe('Person', () => {
     beverly.ageCalc();
     expect(beverly.planetAges[1]).toEqual(52);
   })
+  test('Should take an earthAge and calculate age in Mars years', ()=>
+  {
+    let beverly = new Person(32);
+    beverly.ageCalc();
+    expect(beverly.planetAges[2]).toEqual(17);
+  })
 })
