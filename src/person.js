@@ -1,7 +1,7 @@
 export class Person {
-  constructor(earthAge){
+  constructor(earthAge, earthExpectancy){
     this.earthAge = earthAge;
-    // this.earthExpectancy = earthExpectancy;
+    this.earthExpectancy = earthExpectancy;
     this.planetAges=[];
   }
 
