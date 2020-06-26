@@ -10,6 +10,7 @@ describe('Person', () => {
   test('Should take earthAge and calculate age in Mercury years', ()=>
   {
     let beverly = new Person(32);
+    beverly.ageCalc();
     expect(beverly.planetAges[0]).toEqual(133);
   })
 })
