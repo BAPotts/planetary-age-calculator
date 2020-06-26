@@ -13,6 +13,11 @@ export class Person {
       this.planetAges.push(Math.round(this.earthAge/this.planetConversions[i]));
     }
   }
+  getYears(){
+    // for (let i = 0; i<this.planetConversions.length; i++){
+    //   this.planetAges.push(Math.round(this.earthAge/this.planetConversions[i]));
+    // }
+  }
 
   // ageCalc() {
   //   for (let i = 0; i<planets.yearLength.length; i++){

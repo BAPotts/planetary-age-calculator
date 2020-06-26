@@ -54,4 +54,11 @@ describe('Person', () => {
       beverly.getPlanetAges();
       expect(beverly.planetAges).toEqual([133,52,17,3]);
     })
+    test('Should calculate years left to live on each planet and store in user object property', ()=>
+    {
+      let beverly = new Person(32,79);
+      beverly.getPlanetAges();
+      beverly.getYears();
+      expect(beverly.yearsLeft).toEqual([196, 75, 25, 4]);
+    })
 })
