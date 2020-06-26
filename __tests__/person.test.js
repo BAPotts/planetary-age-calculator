@@ -29,6 +29,6 @@ describe('Person', () => {
   {
     let beverly = new Person(32);
     beverly.ageCalc();
-    expect(beverly.planetAges[2]).toEqual(3);
+    expect(beverly.planetAges[3]).toEqual(3);
   })
 })
