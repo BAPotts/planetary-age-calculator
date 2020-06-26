@@ -46,6 +46,6 @@ describe('Person', () => {
   {
     let george = new Person(82, 79);
     george.ageCalc();
-    expect(george.yearsOver).toEqual(13);
+    expect(george.yearsOver).toEqual([13, 5, 2, 0]);
   })
 })

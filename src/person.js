@@ -16,10 +16,12 @@ export class Person {
       let planetAge = Math.round(this.earthAge/planets.yearLength[i]);
       let planetExpectancy = Math.round(this.earthExpectancy/planets.yearLength[i]);
       let planetYearsLeft = Math.round(planetExpectancy-planetAge);
-      console.log(planetYearsLeft);
       this.planetAges.push(planetAge);
-      this.yearsLeft.push(planetYearsLeft);
+      if(this.earthAge<=this.earthExpectancy){
+        this.yearsLeft.push(planetYearsLeft);
+      } else{
+        this.yearsOver.push(Math.abs(planetYearsLeft));
+      }
     }
-  
   }
 }
