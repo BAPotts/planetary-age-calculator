@@ -61,4 +61,11 @@ describe('Person', () => {
       beverly.getYears();
       expect(beverly.yearsLeft).toEqual([196, 75, 25, 4]);
     })
+    test('Should calculate years over life expectancy if age is greater than life expectancy and store in user object property', ()=>
+    {
+      let beverly = new Person(82,79);
+      beverly.getPlanetAges();
+      beverly.getYears();
+      expect(beverly.yearsOver).toEqual([13, 5, 2, 0]);
+    })
 })
