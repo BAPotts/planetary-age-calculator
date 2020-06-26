@@ -48,5 +48,10 @@ describe('Person', () => {
   //   george.ageCalc();
   //   expect(george.yearsOver).toEqual([13, 5, 2, 0]);
   // })
-  
+    test('Should calculate age of user on other plants and store in user object property', ()=>
+    {
+      let beverly = new Person(32,79);
+      beverly.getPlanetAges();
+      expect(beverly.planetAges).toEqual([133,52,17,3]);
+    })
 })
