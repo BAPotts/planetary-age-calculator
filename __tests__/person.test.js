@@ -40,7 +40,7 @@ describe('Person', () => {
   {
     let beverly = new Person(32,79);
     beverly.ageCalc();
-    expect(beverly.yearsLeft[0]).toEqual(196);
+    expect(beverly.yearsLeft).toEqual([196, 75, 25, 4]);
   })
   test('Should give years lived over life expectancy on planet if age is greater than life expectancy', ()=>
   {
