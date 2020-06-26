@@ -5,15 +5,11 @@ export class Person {
     this.planetAges=[];
     this.yearsLeft=[];
     this.yearsOver=[];
+    this.planetConversions[.24,.62,1.88,11.86];
   }
 
-  getPlanets(){
-    // const planets = {
-    //   name: ["Mercury", "Venus", "Mars", "Jupiter"],
-    //   yearLength: [.24, .62, 1.88, 11.86]
-    // }
-    // return planets;
-  }  
+  
+
   // ageCalc() {
   //   const planets = {
   //     name: ["Mercury", "Venus", "Mars", "Jupiter"],

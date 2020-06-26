@@ -48,10 +48,5 @@ describe('Person', () => {
   //   george.ageCalc();
   //   expect(george.yearsOver).toEqual([13, 5, 2, 0]);
   // })
-  test('Should return object literal with planet names and years as compared to earth years', ()=>
-  {
-    let beverly = new Person(32,79);
-    let planets1 = beverly.getPlanets();
-    expect(planets1).toEqual(planets);
-  })
+  
 })
