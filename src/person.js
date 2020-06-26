@@ -15,7 +15,11 @@ export class Person {
   }
   getYears(){
     for (let i = 0; i<this.planetConversions.length; i++){
-      this.yearsLeft.push(Math.round((this.earthExpectancy/this.planetConversions[i])-this.planetAges[i]));
+      let planetYearsLeft = Math.round((this.earthExpectancy/this.planetConversions[i])-this.planetAges[i]);
+      if(this.earthAge<=this.earthExpectancy){
+        this.yearsLeft.push(planetYearsLeft);
+      }else{this.yearsOver.push(Math.abs(planetYearsLeft));
+      }
     }
   }
 
