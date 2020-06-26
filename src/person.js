@@ -9,6 +9,9 @@ export class Person {
   }
 
   getPlanetAges(){
+    for (let i = 0; i<this.planetConversions.length; i++){
+      this.planetAges.push(Math.round(this.earthAge/this.planetConversions[i]));
+    }
   }
 
   // ageCalc() {
