@@ -4,6 +4,7 @@ export class Person {
     this.earthExpectancy = earthExpectancy;
     this.planetAges=[];
     this.yearsLeft=[];
+    this.yearsOver=[];
   }
 
   ageCalc() {
@@ -15,6 +16,7 @@ export class Person {
       let planetAge = Math.round(this.earthAge/planets.yearLength[i]);
       let planetExpectancy = Math.round(this.earthExpectancy/planets.yearLength[i]);
       let planetYearsLeft = Math.round(planetExpectancy-planetAge);
+      console.log(planetYearsLeft);
       this.planetAges.push(planetAge);
       this.yearsLeft.push(planetYearsLeft);
     }
