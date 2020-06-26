@@ -31,4 +31,9 @@ describe('Person', () => {
     beverly.ageCalc();
     expect(beverly.planetAges[3]).toEqual(3);
   })
+  test('Should take in the Earth life expectancy of user', ()=>
+  {
+    let beverly = new Person(32, 79);
+    expect(beverly.earthExpectancy).toEqual(79);
+  })
 })

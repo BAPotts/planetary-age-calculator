@@ -44,7 +44,7 @@
   |  Program will take inputted earth age and convert to Mars years|"Age: 32"|user.marsAge === 17 |
   |  Program wil take inputted Earth age and convert to Jupiter years|"Age: 32"|user.jupiterAge === 3 |
   |  Program will determine how many years a user has left to live on each planet|"Age: 32"|user.mercuryYearsLeft ===  196|
-  |  If user has passed average life expentancy, program will return the number of years past the life expectancy the user has lived in each planet's years|"Age: 82"|user.mercuryYearsOver === 12|
+  |  If user has passed average life expectancy, program will return the number of years past the life expectancy the user has lived in each planet's years|"Age: 82"|user.mercuryYearsOver === 12|
   
  
 ## Known Bugs

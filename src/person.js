@@ -1,6 +1,7 @@
 export class Person {
   constructor(earthAge){
     this.earthAge = earthAge;
+    // this.earthExpectancy = earthExpectancy;
     this.planetAges=[];
   }
 
@@ -12,5 +13,6 @@ export class Person {
     for (let i = 0; i<planets.yearLength.length; i++){
       this.planetAges.push(Math.round(this.earthAge/planets.yearLength[i]));
     }
+
   }
 }
