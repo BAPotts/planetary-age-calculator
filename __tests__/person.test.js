@@ -36,4 +36,10 @@ describe('Person', () => {
     let beverly = new Person(32, 79);
     expect(beverly.earthExpectancy).toEqual(79);
   })
+  test('Should convert earthExpectancy to life expectancy of other planets and calculate years left to live on each', ()=>
+  {
+    let beverly = new Person(32,79);
+    beverly.ageCalc();
+    expect(beverly.yearsLeft[0]).toEqual(196);
+  })
 })
