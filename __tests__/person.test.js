@@ -13,4 +13,10 @@ describe('Person', () => {
     beverly.ageCalc();
     expect(beverly.planetAges[0]).toEqual(133);
   })
+  test('Should take an earthAge and calculate age in Venus years', ()=>
+  {
+    let beverly = new Person(32);
+    beverly.ageCalc();
+    expect(beverly.planetAges[1]).toEqual(52);
+  })
 })
