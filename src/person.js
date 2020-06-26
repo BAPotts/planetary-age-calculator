@@ -8,6 +8,11 @@ export class Person {
   }
 
   getPlanets(){
+    // const planets = {
+    //   name: ["Mercury", "Venus", "Mars", "Jupiter"],
+    //   yearLength: [.24, .62, 1.88, 11.86]
+    // }
+    // return planets;
   }  
   // ageCalc() {
   //   const planets = {
