@@ -39,6 +39,12 @@
   | Program Behavior | Example Behavior | Example Output |
   | ----------- | ----------- | ----------- |
   |  Program will take in and store a person's age in years|"Age: 32"  |user.earthAge === 32  |
+  |  Program will take inputted earth age and convert to Mercury years|"Age: 32"|user.mercuryAge === 133 |
+  |  Program wil take inputted Earth age and convert to Venus years|"Age: 32"|user.venusAge === 52 |
+  |  Program will take inputted earth age and convert to Mars years|"Age: 32"|user.marsAge === 17 |
+  |  Program wil take inputted Earth age and convert to Jupiter years|"Age: 32"|user.jupiterAge === 3 |
+  |  Program will determine how many years a user has left to live on each planet|"Age: 32"|user.mercuryYearsLeft ===  196|
+  |  If user has passed average life expentancy, program will return the number of years past the life expectancy the user has lived in each planet's years|"Age: 82"|user.mercuryYearsOver === 12|
   
  
 ## Known Bugs
