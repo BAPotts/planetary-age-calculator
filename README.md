@@ -3,22 +3,7 @@
   ### By Beverly Potts
  
 ## Description
- Get Started:
  
-FIRST: [REMEMBER TO (1) CHANGE package.json PROJECT NAME AND DESCRIPTION TO CURRENT PROJECT NAME AND DESCRIPTION, (2) CHANGE TITLE OF HtmlWebpackPlugin IN webpack.config.js TO CURRENT PROJECT NAME, AND (3) CHANGE TITLE OF project-name.js IN SRC DIRECTORY TO NAME OF CURRENT PROJECT.]
- 
-SECOND:
-  $ npm install
-  $ npm install dotenv-webpack --save-dev
-  $ git init
-  $ git add .gitignore
-  $ git commit -m "Activate .gitignore"
-  $ npm run build
-  $ git add .
-  $ git commit -m "Initial global commit"
- 
-  $ npm run start (to initiate live server)
-  
   [Description of program functionality & intent presented as an elevator pitch.]
  
 ## Languages & Technologies Used:
@@ -53,7 +38,7 @@ SECOND:
  
   | Program Behavior | Example Behavior | Example Output |
   | ----------- | ----------- | ----------- |
-  |  |  |  |
+  |  Program will take in and store a person's age in years|"Age: 32"  |user.earthAge === 32  |
   
  
 ## Known Bugs
